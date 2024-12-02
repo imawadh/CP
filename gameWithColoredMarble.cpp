@@ -1,5 +1,7 @@
 # include <bits/stdc++.h>
 using namespace std;
+
+//accepted
  
 // Define
 #define  loop(j) for(int i =0; i<j; i++) ;
@@ -18,7 +20,10 @@ void awadh_solution(){
     {
         int num;
         cin>>num;
-        if((singleelement.find(num))!=singleelement.end()){
+        if(doubleelement.find(num)!= doubleelement.end()){
+            continue;
+        }
+        else if((singleelement.find(num))!=singleelement.end()){
             singleelement.erase(num);
             doubleelement.insert(num);
         }
