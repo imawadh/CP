@@ -1,27 +1,28 @@
 # include <bits/stdc++.h>
 using namespace std;
  
- // accpeted 
 // Define
 #define  loop(j) for(int i =0; i<j; i++) ;
  
+// accepted 
+
 // Typedef
 typedef long long  ll;
  
 void awadh_solution(){
-    string str;
-    cin>>str;
-    reverse(str.begin(),str.end());
-    // cout<<str<<'\n';
-    for(int i =0; i<str.size(); i++){
-        if(str[i]=='p'){
-            str[i]='q';
-        }
-        else if(str[i]=='q'){
-            str[i]='p';
-        }
+    int num;
+    cin>>num;
+    
+    if(num%33==0){
+        cout<<"YES\n";
     }
-    cout<<str<<'\n';
+    else{
+        cout<<"NO\n";
+    }
+
+    // Think of Divisibility of 33 i.e; 3 * 11 
+
+
  
  
 }

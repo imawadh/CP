@@ -1,6 +1,6 @@
 # include <bits/stdc++.h>
 using namespace std;
- 
+ // accpeted 
 // Define
 #define  loop(j) for(int i =0; i<j; i++) ;
  
