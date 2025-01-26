@@ -6,27 +6,30 @@ using namespace std;
  
 // Typedef
 typedef long long  ll;
+vector <long long> v(110,0);
  
 void awadh_solution(){
-    int ans = 0;
     int n;
     cin>>n;
-    vector <int> v(n);
-    bool flag = true;
-    for(int i = 0; i<n; i++){
+    for(int i =0; i<n; i++){
         cin>>v[i];
-        if(v[i]<=(n-i-1)*2 || v[i]<=(i)*2){
-            flag =  false;
+    }
+    for(int i = 1; i<=60;i++){
+        set <int> st;
+        ll  num = (1LL << i);
+        for(int j =0; j<n; j++){
+            st.insert(v[j]%num);
+        }
+        if(st.size()==2){
+            // cout<<(1LL<<i)<<'\n';
+            cout<<num<<'\n';
+            return;
         }
     }
-    if(flag){
-        cout<<"YES\n";
-    }
-    else{
-        cout<<"NO\n";
-    }
+    // cout<<"Hello ";
  
 }
+
  
 int main(){
  
